@@ -23,6 +23,7 @@ def game_tournament(hero, dragon_list):
             if dragon.check_answer(answer):
                 hero.attack(dragon)
                 print('Верно! \n** дракон кричит от боли **')
+                print("Здоровье дракона = ")
             else:
                 dragon.attack(hero)
                 print('Ошибка! \n** вам нанесён удар... **')
@@ -32,7 +33,7 @@ def game_tournament(hero, dragon_list):
 
     if hero.is_alive():
         print('Поздравляем! Вы победили!')
-        print('Ваш накопленный опыт:', hero._experience)
+        print('Ваш накопленный опыт:', Hero._experience)
     else:
         print('К сожалению, Вы проиграли...')
 
